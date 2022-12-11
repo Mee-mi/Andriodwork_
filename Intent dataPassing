@@ -1,0 +1,15 @@
+String NAME= name.getText().toString();
+                String BOOKNAME= bookname.getText().toString();
+//
+
+                intent.putExtra("data", NAME);
+                intent.putExtra("bookname", BOOKNAME);
+                startActivity(intent);
+                
+                
+                  Intent intent= getIntent();
+        String Name= intent.getStringExtra("data");
+
+        name.setText(Name);
+        String Book= intent.getStringExtra("bookname");
+        bookname.setText(Book);
